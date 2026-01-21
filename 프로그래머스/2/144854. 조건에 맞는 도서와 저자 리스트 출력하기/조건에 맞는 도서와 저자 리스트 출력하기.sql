@@ -4,3 +4,7 @@ FROM BOOK B
 JOIN AUTHOR A ON B.AUTHOR_ID = A.AUTHOR_ID
 WHERE CATEGORY LIKE '경제'
 ORDER BY PUBLISHED_DATE ASC
+
+JOIN 의 시작점 같은 문제
+JOIN만 어떻게 하는지 알면 다른 건 필요치 않을 정도의 난이도.
+일단 KIT내의 1단계 2단계를 다 풀고 생활코딩 MYSQL편을 보고 공부해야겠다.

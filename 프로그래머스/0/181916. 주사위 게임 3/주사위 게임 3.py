@@ -36,3 +36,7 @@ def solution(a, b, c, d):
         answer = min(dice)
     
     return answer
+
+sort를 쓰면 같은 숫자들은 무조건 이웃하게 되는 걸 이용해 식을 만든다.
+abs()는 절댓값을 구하는 함수. 파이썬 배울 때 배웠던 거 같은 기억이 난다.
+|p - q| = abs(p - q) 다.

@@ -7,3 +7,10 @@ JOIN (
      GROUP BY YEAR(DIFFERENTIATION_DATE)) M
 ON YEAR(E.DIFFERENTIATION_DATE) = M.YEAR
 ORDER BY YEAR ASC, YEAR_DEV ASC
+
+원래 서브쿼리를 써야하는 문제가 나오면 피했는데
+오늘은 받아쓰기라도 해봤다.
+그래야 눈에 들어오고, 손이 움직여지니까.
+
+GROUP BY는 주어진 조건을 기준으로 컬럼에 있는 데이터를 묶어준다.
+이 쿼리 안의 서브쿼리를 년도별로 가장 큰 사이즈만을 출력하게 한다.

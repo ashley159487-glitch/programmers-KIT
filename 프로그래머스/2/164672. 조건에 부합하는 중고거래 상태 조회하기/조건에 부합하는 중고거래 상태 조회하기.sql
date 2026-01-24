@@ -7,3 +7,8 @@ END AS STATUS
 FROM USED_GOODS_BOARD
 WHERE CREATED_DATE LIKE '2022-10-05'
 ORDER BY BOARD_ID DESC
+
+컬럼 안의 내용을 다르게 가공해서 보여줄 때는
+SELECT 안에서 CASE WHEN으로 가공한다.
+다 가공하면 END와 컬럼명을 뭐로 할 건지 AS 뒤에 컬럼명까지 써준다.
+날짜는 CREATED_DATE = '2022-10-05'로 찾아도 된다.

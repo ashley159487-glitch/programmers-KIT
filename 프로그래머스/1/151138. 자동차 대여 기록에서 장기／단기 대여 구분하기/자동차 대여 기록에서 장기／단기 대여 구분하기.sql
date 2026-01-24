@@ -6,3 +6,8 @@ END AS RENT_TYPE
 FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
 WHERE START_DATE LIKE '2022-09%'
 ORDER BY HISTORY_ID DESC
+
+이게 왜 1레벨이야;;
+
+날짜를 계산 할 때는 DATEDIFF를 쓴다 그리고 대여 시작일과 종료일이 같을 때 1일로 계산하기 위해
++ 1을 해줘야 한다.

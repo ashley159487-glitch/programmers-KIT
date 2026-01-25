@@ -4,3 +4,6 @@ FROM FISH_INFO I JOIN FISH_NAME_INFO N
 ON N.FISH_TYPE = I.FISH_TYPE
 GROUP BY N.FISH_NAME
 ORDER BY COUNT(I.FISH_TYPE) DESC
+
+문제에는 이름이 먼저 나오게 하라고 했는데 그렇게 하니까 오답이됨.
+딱히 어려운 건 없었음.

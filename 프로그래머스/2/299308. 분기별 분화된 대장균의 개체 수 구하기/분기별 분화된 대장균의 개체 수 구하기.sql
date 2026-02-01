@@ -8,3 +8,16 @@ END AS 'QUARTER',
 COUNT(*) AS ECOLI_COUNT FROM ECOLI_DATA
 GROUP BY QUARTER
 ORDER BY QUARTER ASC
+===============================================================
+분기를 나눌 땐 위의 방법처럼 CASE WHEN으로 나눠도 되지만
+
+SELECT 
+CONCAT(QUARTER(DIFFERENTIATION_DATE), 'Q') AS QUARTER, 
+COUNT(*) AS ECOLI_COUNT
+FROM ECOLI_DATA
+GROUP BY QUARTER
+ORDER BY QUARTER ASC;
+이렇게 하면 각 분기가 숫자로 나오고 CONCAT으로 숫자와 Q를 합쳐주기 때문에
+더 간단하게 명령문을 작성 할 수 있다.
+그리고 이런 식을 SELECT문을 작성했다면 꼭 GROUP BY로 그룹을 만들어줘야
+컬럼이 합쳐져서 하나로 안나오게 된다.

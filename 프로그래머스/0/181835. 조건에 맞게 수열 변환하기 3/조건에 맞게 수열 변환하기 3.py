@@ -6,3 +6,5 @@ def solution(arr, k):
         else :
             answer.append(i + k)
     return answer
+===================================
+%연산자를 알면 쉽게 풀 수 있다.

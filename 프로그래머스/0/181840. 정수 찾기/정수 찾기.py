@@ -4,3 +4,5 @@ def solution(num_list, n):
         return 1
     else :
         return 0
+===========================
+부분 문자열 찾기의 정수 버전.

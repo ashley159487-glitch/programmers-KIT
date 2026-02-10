@@ -28,5 +28,23 @@ def solution(progresses, speeds):
 3. 아직도 원하는 값을 찾은 후 그것을 바로 이용해야 할 지 변수에 넣어서 이용해야 할 지 감을 못 잡음.
 4. 반복문으로 돌릴 때 직접 그 값을 꺼내야 할 지, 인덱스로 값을 출력해야 할 지 감을 못 잡음.
 5. 가장 근본적인 문제는 문제를 읽고 그걸 어떻게 코드로 구현해야 할까 고민하고 글로 옮겨야 하는데 그것조차 못함
-
-일단 한 번 더 이 문제를 풀어보자.
+==============================================================================================================
+def solution(progresses, speeds):
+    answer = []
+    for i, j in enumerate(progresses) :
+        days = (100 - j + speeds[i] - 1) // speeds[i]
+        answer.append(days)
+    target = answer[0]
+    total = []
+    cnt = 1
+    for i in range(1, len(answer)) :
+        if answer[i] <= target :
+            cnt += 1
+        else :
+            total.append(cnt)
+            cnt = 1
+            target = answer[i]
+    total.append(cnt)
+    return total
+======================================================================
+math함수를 쓰지 않고 수학식과 몫연산자를 활용한 풀이식.
